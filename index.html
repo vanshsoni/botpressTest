@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Botpress Webchat User ID Test</title>
+</head>
+<body>
+  <h2>Botpress Webchat User ID Test</h2>
+
+  <!-- Load Botpress Webchat script -->
+  <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+
+  <!-- Initialize the webchat -->
+  <script>
+    window.botpressWebChat.init({
+      botId: '4afc1972-e265-4565-b7f9-ccc74c169feb',
+      clientId: 'a76e13b0-f775-46b4-850c-eec1a9fe59b9',
+
+      // This is where you set your custom user ID (e.g., from your own app)
+      userId: '3598',  // Replace this dynamically if needed
+
+      // Optional theme config
+      config: {
+        layout: {
+          width: '400px',
+          height: '500px'
+        },
+        theme: {
+          color: '#3B82F6',
+          fontFamily: 'inter',
+          radius: 1,
+          themeMode: 'light',
+          variant: 'solid'
+        }
+      }
+    });
+  </script>
+</body>
+</html>
